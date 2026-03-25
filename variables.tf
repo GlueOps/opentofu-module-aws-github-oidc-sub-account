@@ -1,13 +1,3 @@
-variable "assume_role_arn" {
-  description = "ARN of the role to assume in the sub-account (used to configure the AWS provider)"
-  type        = string
-}
-
-variable "region" {
-  description = "AWS region for the sub-account provider"
-  type        = string
-}
-
 variable "repos" {
   description = "Map of repo name to config for repos whose state lives in this account"
   type = map(object({

@@ -1,10 +1,3 @@
-provider "aws" {
-  region = var.region
-  assume_role {
-    role_arn = var.assume_role_arn
-  }
-}
-
 # --- Scoped S3 state roles ---
 
 resource "aws_iam_role" "s3_state" {
